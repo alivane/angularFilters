@@ -13,14 +13,14 @@
   <div ng-controller="Controller">
     <h1>Angular Filters</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Voluptatem repudiandae quos tempore nobis quaerat voluptas,
-      expedita voluptates corporis neque eum quis assumenda non maxime
-      accusantium praesentium omnis, excepturi dicta modi!
+      {{msg()}} {{name}}
     </p>
-    <button>Change Image</button>
+    <p>
+      Cookie Cost: {{CookieCost | currency}}
+    </p>
+    <button ng-click="button()">Change Image</button>
     <div>
-      <img src="oso1.png">
+      <img ng-src="/oso{{value}}.png">
     </div>
   </div>
 </body>
