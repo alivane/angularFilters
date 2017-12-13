@@ -20,6 +20,7 @@
     $scope.msg = function () {
       var msg = 'Hello, How are you?';
       var output = $filter('uppercase')(msg)
+      console.log('*')
       return output
     }
 
